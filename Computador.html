@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="public/css/Computador.css">
+        <title>Montagem do computador</title>
+    </head>
+
+    <body>
+        <h1>Monte seu PC</h1>
+        <img src="monteseupc.png" alt="Monte seu PC" width="250" height="300">
+        <p>Valor inicial do Computador: R$ 1500</p>
+        <h2>Características adicionais</h2>
+
+        <form action="gravarcomputador" method="post" enctype="multipart/form-data">
+        
+            <fieldset id="campo1">
+                <legend>Processador</legend>
+
+                <input type="radio" id="i3" name="Processador" value="600">
+                <label for="i3">i3  (R$ 600,00)</label>
+
+                <input type="radio" id="i5" name="Processador" value="1100">
+                <label for="i5">i5 (R$ 1100,00)</label>
+
+                <input type="radio" id="i7" name="Processador" value="1500">
+                <label for="i7">i7 (R$ 1500,00)</label>
+            </fieldset>
+            <br>
+            <fieldset id="campo2">
+                <legend>RAM</legend>
+
+                <input type="radio" id="4GB" name="RAM" value="220">
+                <label for="4GB">4GB (R$ 220,00)</label>
+
+                <input type="radio" id="8GB" name="RAM" value="350">
+                <label for="8GB">8GB (R$ 350,00)</label>
+
+                <input type="radio" id="16GB" name="RAM" value="700">
+                <label for="16GB">16GB (R$ 700,00)</label>
+            </fieldset>
+            <br>
+            <fieldset id="campo3">
+                <legend>Placa de Vídeo</legend>
+
+                <input type="radio" id="1050ti" name="Video" value="1830">
+                <label for="1050ti">GTX 1050ti (R$ 1830,00)</label>
+
+                <input type="radio" id="1660ti" name="Video" value="4000">
+                <label for="1660ti">GTX 1660ti (R$ 4000,00)</label>
+
+                <input type="radio" id="3060" name="Video" value="5000">
+                <label for="3060">RTX 3060 (R$ 5000,00)</label>
+            </fieldset>
+            <br>
+            <fieldset id="campo4">
+                <legend>HD</legend>
+
+                <input type="radio" id="500GB" name="HD" value="260">
+                <label for="500GB">500GB (R$ 260,00)</label>
+
+                <input type="radio" id="1TB" name="HD" value="340">
+                <label for="1TB">1TB (R$ 340,00)</label>
+
+                <input type="radio" id="2TB" name="HD" value="430">
+                <label for="2TB">2TB (R$ 430,00)</label>
+            </fieldset>
+            <br>
+            <fieldset id="campo5">
+                <legend>SSD</legend>
+
+                <input type="radio" id="240GB" name="SSD" value="250">
+                <label for="240GB">240GB (R$ 250,00)</label>
+
+                <input type="radio" id="512GB" name="SSD" value="500">
+                <label for="512GB">512GB (R$ 500,00)</label>
+
+                <input type="radio" id="960GB" name="SSD" value="660">
+                <label for="960GB">960GB (R$ 660,00)</label>
+            </fieldset>
+
+                <p id="botao"><input type="submit" id="resultado" value="Terminar montagem"></p>
+        </form>
+            <br>
+    </body>
+</html>
